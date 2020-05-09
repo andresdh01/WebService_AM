@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Consulta del Pokemon</h3>
+            <div class="form-group input-group">
+                <span class="input-group-addon">Nombre: </span>
+                <input class="form-control" id="txtNombre">
+                <button class="btn btn-primary input-group-addon" onclick="consultar();">Consulta</button>
+
+            </div>
+            <div style="display:none" class="text-center" id="divCargando">
+                <img src="img/8-0.gif" class="img-responsive"/>
+            </div>
+            <div id="pokeInfo" style="display:none">
+                <img src="" alt="" id="fotoPoke">
+            </div>
+            <div>
+                <label>Peso: </label><span id="dataPeso"></span>
+            </div>
+
+        </div>
+        
+        <script src="js/pokedex.js"></script>
+    </body>
+</html>
